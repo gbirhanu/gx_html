@@ -1,1 +1,1 @@
-- This HTML Course by GX Camp
+- This HTML Course by GXCamp
