@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buna Resturant</title>
+    <style>
+      table,
+      tr > * {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Buna Resturant</h1>
+      <nav id="top">
+        <a href="#about">About Us</a> <br />
+        <a href="#menu">Our Menu</a> <br />
+        <a href="hour.html">Service Hour</a> <br />
+        <a href="contact.html">Contact</a> <br />
+      </nav>
+      <section>
+        <input type="search" name="search" id="search" />
+        <span>Search</span>
+        <details>
+          <summary>Filter</summary>
+          <input type="range" name="range" id="price" max="70%" min="20%" />
+          <span>Price</span>
+        </details>
+      </section>
+    </header>
+    <main>
+      <section>
+        <figure>
+          <img src="assets/another_food.png" alt="Our Food" />
+          <figcaption>Buna Food and drink</figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section id="about">
+        <h1>About Buna Resturant</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          quidem nulla mollitia iste, error sunt. Temporibus quidem beatae
+          reprehenderit doloremque a rem? Ducimus delectus accusantium dolores
+          itaque, soluta facere vel. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Vel eos unde, blanditiis atque accusamus, at
+          dignissimos consectetur nobis aperiam ducimus cum ab vero saepe
+          assumenda dicta, odit earum. Eum, veniam? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Officia asperiores perferendis quae eius
+          explicabo, facilis tenetur quo animi corporis ex hic a rem suscipit
+          quibusdam quam laboriosam possimus expedita et?
+        </p>
+        <h2>Buna Speccial</h2>
+        <details>
+          <summary>Our special food includes the following</summary>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          soluta laudantium iusto vitae similique nostrum eaque dolorem et
+          quisquam cum tempore, incidunt sequi officiis mollitia maxime autem
+          repellat numquam fuga. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quisquam, quaerat sapiente molestiae delectus
+          pariatur voluptatem beatae repellendus hic enim, tempora ex fugiat
+          veniam voluptas est, ea perspiciatis illum error eum!
+        </details>
+      </section>
+      <section id="menu">
+        <h1>Our Menu</h1>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="3">Out Menus</td>
+            </tr>
+
+            <tr>
+              <th>Food</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4">Crunchy</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$2.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$3.25</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Soft</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>$2.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Chips & Salsa $3</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <a href="#top">Back top</a>
+      <hr />
+      copyrite &copy; Buna Resturant
+      <span
+        ><script>
+          document.write(new Date().getFullYear());
+        </script></span
+      >
+    </footer>
+  </body>
+</html>

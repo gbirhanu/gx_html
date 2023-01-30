@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Form Element</title>
+  </head>
+  <body>
+    <!-- Forma Element -->
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="555-555-5555"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            id="phone"
+            required
+          />
+        </div>
+        <div>
+          <label for="height">Height</label>
+          <input type="number" name="height" id="height" />
+        </div>
+        <div>
+          <label for="bday">Birth Date</label>
+          <input type="date" name="bday" id="bday" />
+        </div>
+        <div>
+          <label for="btime">Birth Time</label>
+          <input type="time" name="btime" id="btime" />
+        </div>
+        <div>
+          <label for="color">Favorite Color</label>
+          <input type="color" name="color" id="color" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Background Information</legend>
+        <label for="hobby">Do You have a hobby</label>
+        <p>
+          <input type="radio" name="hobby" id="hobby" value="yes" />
+          <label for="hobby">Yes</label>
+        </p>
+        <p>
+          <input type="radio" name="hobby" id="hobby" value="no" />
+          <label for="hobby">No</label>
+        </p>
+        <label for="">Where are you from</label>
+        <select name="country" id="country">
+          <option value="Ethiopia">Ethiopia</option>
+          <option value="Kenya">Kenya</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+        <div>
+          <label for="sport">Tell us your Favorite sport</label>
+
+          <input type="text" name="sport" id="sport" list="sport_list" />
+          <datalist id="sport_list">
+            <option value="cricket">Cricket</option>
+            <option value="football">Foot Ball</option>
+            <option value="basketball">Basket Ball</option>
+          </datalist>
+        </div>
+        <div>
+          <label for="">Your Skill</label>
+          <p>
+            <input type="checkbox" name="skill" id="skill" value="JavaScript" />
+            <label for="skill">JavaScript</label>
+          </p>
+          <p>
+            <input type="checkbox" name="skill" id="skill" value="CSS" />
+            <label for="skill">CSS</label>
+          </p>
+        </div>
+        <div>
+          <label for="">Tell us in detail about yourself</label>
+          <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

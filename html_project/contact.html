@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buna Resturant | Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav id="top">
+        <a href="home.html">Home</a> <br />
+        <a href="home.html#about">About Us</a> <br />
+        <a href="home.html#menu">Out Menu</a> <br />
+        <a href="hour.html">Service Hour</a> <br />
+      </nav>
+    </header>
+    <main>
+      <section>
+        <figure>
+          <img src="/assets/anather_food_new.png" alt="Food sample" />
+          <figcaption>Bunna Resturant Food</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h1>Out Contact Form</h1>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send Us A Message</legend>
+            <br />
+            <div>
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <br />
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <br />
+            <label for="message">Your Message:</label> <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h1>Out Location</h1>
+        <address>
+          <p>555 Buna Resturant Kansas City</p>
+          <p>phone:<a href="tel:555-555-5555">555-555-5555</a></p>
+        </address>
+        <a href="#top">Back to top</a>
+      </section>
+    </main>
+    <footer>
+      copyrite &copy; Buna Resturant
+      <span
+        ><script>
+          document.write(new Date().getFullYear());
+        </script></span
+      >
+    </footer>
+  </body>
+</html>

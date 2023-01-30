@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Link</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .section {
+        width: 100vw;
+        height: 40vh;
+        background-color: brown;
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .one,
+      .three {
+        background-color: blueviolet;
+      }
+      .nav {
+        background-color: blue;
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        color: white;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Anchor tag -->
+    <a href="https://www.facebook.com" target="_blank">Go to face book</a>
+    <!-- On Page naviagation -->
+    <div id="top" class="nav">
+      <a href="#section1">1</a>
+      <a href="#section2">2</a>
+      <a href="#section3">3</a>
+      <a href="#section4">4</a>
+    </div>
+    <div id="section1" class="section one">Section One</div>
+    <div id="section2" class="section two">Section Two</div>
+    <div id="section3" class="section three">Section Three</div>
+    <div id="section4" class="section four">Section Four</div>
+    <div style="background-color: blueviolet">
+      <a href="#top">Back top</a>
+    </div>
+    <div style="background-color: brown">
+      <a href="mailto:somebody@gxcamp.com">mai me</a> <br />
+      <a href="tel:+25666666">Call us</a>
+    </div>
+  </body>
+</html>

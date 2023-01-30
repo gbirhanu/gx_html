@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Table</title>
+    <style>
+      table,
+      tr > * {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Career path</th>
+          <th rowspan="2">year</th>
+        </tr>
+        <tr>
+          <th>Past</th>
+          <th>Current</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>John Doe</th>
+          <td>Starbucks</td>
+          <td>Microsoft</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th>Peter Doe</th>
+          <td>Starbucks</td>
+          <td>Microsoft</td>
+          <td>2022</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>2000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
